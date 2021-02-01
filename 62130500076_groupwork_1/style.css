@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('./fonts/Metropolis-Regular.otf');
+}
+@font-face {
+    font-family: 'Metropolis-Medium';
+    src: url('./fonts/Metropolis-Medium.otf');
+}
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url('./fonts/Metropolis-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Metropolis-SemiBold';
+    src: url('./fonts/Metropolis-SemiBold.otf');
+    font-weight: bolder;
+}    
+@font-face {
+    font-family: 'Metropolis-ExtraBold';
+    src: url('./fonts/Metropolis-ExtraBold.otf');
+}    
+    
+body {
+    background-color: #effffe;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Metropolis-Regular';
+}
+
+a:hover{
+    font-family: 'Metropolis-medium';
+}
+
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    bottom: 0;
+    border: 2px solid lightseagreen;
+}
+
+h1 {
+    font-family: 'Metropolis-ExtraBold';
+}
+
+p {
+    font-family: 'Metropolis-Regular';
+}
+
+footer {
+    font-family: 'Metropolis-Medium';
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+footer button {
+    background-color: #6b6c72;
+    border-color: #6b6c72;
+}

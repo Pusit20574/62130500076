@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Budget Tracker & Planner | Free Online Money Management | Mint</title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="shortcut icon" href='https://digitalasset.intuit.com/IMAGE/A7M0suhgc/Mint-logo.svg'>
+
+   <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+   <!-- Using via Google Web Fonts -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- https://tailwindcss.com/docs/installation -->
+   <!-- Using Tailwind via CDN -->
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+   <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+   <!-- Vue CDN -->
+   <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+   <!-- navbar -->
+   <nav class="flex overflow-hidden w-screen bg-white leading-10">
+      <!-- logo -->
+      <img src="./images/mint.png" alt="logo" class="max-h-7 mt-3 w-20 2xl:ml-52 xl:ml-32 lg:ml-16">
+      <!-- link -->
+      <a class="mt-3.5 2xl:ml-12 xl:ml-12 lg:ml-7 text-gray-400 font-medium hover:text-gray-700 tracking-normal" href="#How it works">How it works</a>
+      <a class="mt-3.5 2xl:ml-10 xl:ml-7  lg:ml-7 text-gray-400 font-medium hover:text-gray-700" href="#Credit Cards">Credit Cards</a>
+      <a class="mt-3.5 2xl:ml-9  xl:ml-7  lg:ml-7 text-gray-400 font-medium hover:text-gray-700" href="#Investing">Investing</a>
+      <a class="mt-3.5 2xl:ml-11 xl:ml-7  lg:ml-7 text-gray-400 font-medium hover:text-gray-700" href="#Loans">Loans</a>
+      <a class="mt-3.5 2xl:ml-11 xl:ml-7  lg:ml-7 mr-7 text-gray-400 font-medium hover:text-gray-700" href="#Resources">Resources</a>
+
+      <!-- button signin -->
+      <form><button class="flex border-2 border-black rounded shadow ripple font-normal text-black px-2 my-3.5 transition duration-300 ease-in-out hover:bg-gray-200 hover:text-black text-sm leading-6 2xl:ml-96 xl:ml-60 lg:ml-48" formaction="https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dhero_sign_up_free_ProspectWeb%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26adobe_mc%3DMCMID%253D73858714158080255052773804408215191989%257CMCORGID%253D969430F0543F253D0A4C98C6%252540AdobeOrg%257CTS%253D1607715239%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26ivid%3D2c96f104-5d62-481f-92b9-949845451311https://accounts.intuit.com/signup.html?">
+          <img src="./images/key.png" class="max-w-xl max-h-5 pr-2.5 my-0">Sign in
+      </button></form>
+  </nav>
+
+  <!-- body content -->
+  <div>
+
+      <!-- women pic -->
+      <img src="./images/bgwomen.png" style="height: 530px;" class=" max-w-xl float-right -mt-8 2xl:mr-44 xl:mr-18 lg:mr-4">
+
+      <!-- text-content on the left hand side -->
+      <h1 class="text-5xl text-gray-700 2xl:ml-64 xl:ml-48 lg:ml-24" style="margin-top: 4.5rem;">Experience a</h1>
+      <h1 class="text-5xl text-gray-700 mt-2 2xl:ml-64 xl:ml-48 lg:ml-24">fresh way to</h1>
+      <h1 class="text-5xl text-gray-700 mt-2 2xl:ml-64 xl:ml-48 lg:ml-24" style="color: #1b8381;">manage money</h1>
+
+      <p class="text-lg text-gray-700 mt-4  2xl:ml-64 xl:ml-48 lg:ml-24">Reach your goals with personalized insights,</p>
+      <p class="text-lg text-gray-700 -mt-1 2xl:ml-64 xl:ml-48 lg:ml-24">custom budgets, spend tracking, and subscription</p>
+      <p class="text-lg text-gray-700 -mt-1 2xl:ml-64 xl:ml-48 lg:ml-24">monitoring—all for free.</p>
+
+      <!-- signup button -->
+      <a href="https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dhero_sign_up_free_ProspectWeb%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26adobe_mc%3DMCMID%253D73858714158080255052773804408215191989%257CMCORGID%253D969430F0543F253D0A4C98C6%252540AdobeOrg%257CTS%253D1607715239%26ivid%3Dff7dea5d-adcb-4f2a-b10e-ee118291264e%26ivid%3D2c96f104-5d62-481f-92b9-949845451311">
+          <button class="border-2 rounded text-gray-100 px-3 py-2 mt-10 text-lg 2xl:ml-64 xl:ml-48 lg:ml-24" style="font-family: 'Metropolis-Medium'; background-color: #1b8381; border-color:#1b8381;">
+              Sign up for Mint
+          </button>
+      </a>
+
+      <!-- button app store & google play -->
+      <div class="flex">
+      <a href="https://apps.apple.com/us/app/mint-personal-finance-money/id300238550">
+          <img src="./images/apple.png" class="mt-10 max-w-4xl max-h-11 2xl:ml-64 xl:ml-48 lg:ml-24"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.mint&hl=en_US">
+          <img src="./images/google.png" class="mt-10 ml-3.5 max-w-4xl max-h-11" ></a>
+      </div>
+
+  </div>
+
+  <!-- before footer bar -->
+  <div class="w-screen h-20 mt-24 flex" style="background-color: #dffdf5;">
+      <img src="./images/correct.svg" class="w-7 h-8 mt-5 2xl:ml-64 xl:ml-48 lg:ml-24">
+      <p class="text-gray-700 text-xl mt-6 ml-3" style="font-family: 'Metropolis-SemiBold';">#1 most downloaded personal finance app*</p>
+
+      <img src="./images/correct.svg" class="w-7 h-8 mt-5 2xl:ml-50 xl:ml-48 lg:ml-24">
+      <p class="text-gray-700 text-xl mt-6 ml-3" style="font-family: 'Metropolis-SemiBold';">Budget-friendly, totally free</p>
+  </div>
+
+  <!-- footer -->
+  <footer>
+      <button class="border-2 rounded text-gray-100 px-3 py-2 mt-10 text-xs 2xl:mr-24 xl:mr-20 lg:mr-36">
+          Privacy Settings
+      </button>
+  </footer>
+
+   <!-- my main.js -->
+   <script src="./main.js"></script>
+</body>
+
+</html>
